@@ -7,5 +7,5 @@ import kotlinx.coroutines.flow.Flow
 
 
 interface ShmotkebisRepository {
-    fun getShmotkebi(): Flow<ResultWrapper<List<Shmotkebi>>>
+    suspend fun getShmotkebi(): Flow<ResultWrapper<List<Shmotkebi>>>
 }
